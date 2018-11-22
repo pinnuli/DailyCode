@@ -6,11 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="DailyCode" />
+        <module name="DataStructure" />
+        <module name="SwordFingerOffer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DailyCode" target="1.5" />
+      <module name="DataStructure" target="1.5" />
+      <module name="SwordFingerOffer" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
