@@ -7,13 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="DataStructure" />
+        <module name="Leetcode" />
         <module name="SwordFingerOffer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DailyCode" target="1.5" />
-      <module name="DataStructure" target="1.5" />
-      <module name="SwordFingerOffer" target="1.5" />
+      <module name="DailyCode" target="1.8" />
+      <module name="DataStructure" target="1.8" />
+      <module name="Leetcode" target="1.8" />
+      <module name="SwordFingerOffer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

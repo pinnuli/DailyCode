@@ -1,4 +1,4 @@
-package the1_findInTwoDimensionalArray;
+package the4_findInTwoDimensionalArray;
 
 import java.util.Scanner;
 
