@@ -12,6 +12,7 @@
         <module>SwordFingerOffer</module>
         <module>DataStructure</module>
         <module>Leetcode</module>
+        <module>SomeInterviewCase</module>
     </modules>
 
 
