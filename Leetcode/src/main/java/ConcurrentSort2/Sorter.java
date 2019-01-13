@@ -111,8 +111,9 @@ public class Sorter {
             quicksort(left, right);
             synchronized (count) {
                 // AtomicInteger.getAndDecrement() returns the old value. If the old value is 1, then we know that the actual value is 0.
-                if (count.getAndDecrement() == 1)
+                if (count.getAndDecrement() == 1){
                     count.notify();
+                }
             }
         }
 
@@ -146,7 +147,7 @@ public class Sorter {
          * @return The final index of the pivot value.
          */
         private int partition(int pLeft, int pRight) {
-            T pivotValue = values[pRight];
+           /* T pivotValue = values[pRight];
             int storeIndex = pLeft;
             for (int i = pLeft; i < pRight; i++) {
                 if (values[i].compareTo(pivotValue) < 0) {
@@ -155,7 +156,21 @@ public class Sorter {
                 }
             }
             swap(storeIndex, pRight);
-            return storeIndex;
+            return storeIndex;*/
+
+            T key = values[pLeft];
+            while (pLeft < pRight) {
+                while (pLeft < pRight && values[pRight].compareTo(key) >= 0) {
+                    pRight--;
+                }
+                values[pLeft] = values[pRight];
+                while (pLeft < pRight && values[pLeft].compareTo(key) <= 0) {
+                    pLeft++;
+                }
+                values[pRight] = values[pLeft];
+            }
+            values[pLeft] = key;
+            return pLeft;
         }
 
         /**
