@@ -1,4 +1,4 @@
-package PrimeNumber;
+package cvte.primeNumber;
 
 /**
  * @author: pinnuli
