@@ -1,4 +1,4 @@
-package the7_reConstructBinaryTree;
+package the7_重建二叉树;
 
 /**
  * @author: pinnuli

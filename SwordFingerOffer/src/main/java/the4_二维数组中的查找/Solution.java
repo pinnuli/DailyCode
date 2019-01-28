@@ -1,4 +1,4 @@
-package the4_findInTwoDimensionalArray;
+package the4_二维数组中的查找;
 
 import java.util.Scanner;
 

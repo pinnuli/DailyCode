@@ -1,4 +1,4 @@
-package the6_printListFromTailToHead;
+package the6_从尾到头打印链表;
 
 /**
  * @author: pinnuli

@@ -1,4 +1,4 @@
-package the5_replaceSpace;
+package the5_替换空格;
 
 /**
  * 有两个排序数组A和B，内存在A的末尾有足够多的空余空间容纳B，实现一个函数，把B
