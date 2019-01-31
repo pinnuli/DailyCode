@@ -1,4 +1,4 @@
-package the03_lengthOfLongestSubstring;
+package num3_lengthOfLongestSubstring;
 
 import java.util.ArrayList;
 import java.util.HashMap;
