@@ -7,4 +7,5 @@ package num5_longestPalindrome;
 
 public class Solution {
 
+    
 }
