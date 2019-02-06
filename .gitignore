@@ -1,2 +1,8 @@
 *.class
 .idea
+/.idea/
+/DataStructure/target/
+/Leetcode/target/
+/SomeInterviewCase/target/
+/SwordFingerOffer/target/
+/*.iml
