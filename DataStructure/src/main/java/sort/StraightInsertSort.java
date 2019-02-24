@@ -10,7 +10,7 @@ import java.util.Arrays;
 public class StraightInsertSort {
 
     public static void sort(int[] arr) {
-        if (arr.length < 1) {
+        if (arr.length <= 1) {
             return;
         }
         int i, j;
