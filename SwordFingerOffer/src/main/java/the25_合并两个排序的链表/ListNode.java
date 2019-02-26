@@ -1,4 +1,4 @@
-package the23_反转链表;
+package the25_合并两个排序的链表;
 
 /**
  * @author: pinnuli

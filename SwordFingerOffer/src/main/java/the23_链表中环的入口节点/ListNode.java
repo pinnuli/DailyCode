@@ -1,4 +1,4 @@
-package the22_链表中环的入口节点;
+package the23_链表中环的入口节点;
 
 /**
  * @author: pinnuli
