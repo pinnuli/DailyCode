@@ -25,7 +25,8 @@ public class HeapSort {
     }
 
     public static void sort(int[] arr) {
-        for (int i = arr.length / 2; i >= 0; i--) {
+        // 通过使用调整来建堆
+        for (int i = arr.length / 2 - 1; i >= 0; i--) {
             heapAdjust(arr, i, arr.length - 1);
         }
         for (int i = arr.length - 1; i > 0; i--) {
