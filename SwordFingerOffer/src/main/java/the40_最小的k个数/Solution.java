@@ -56,4 +56,5 @@ public class Solution {
         array[low] = key;
         return low;
     }
+
 }
