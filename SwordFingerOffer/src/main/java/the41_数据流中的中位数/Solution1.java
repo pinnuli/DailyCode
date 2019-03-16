@@ -8,10 +8,11 @@ import java.util.List;
  * 如果从数据流中读出奇数个数值，那么中位数就是所有数值排序之后位于中间的数值。
  * 如果从数据流中读出偶数个数值，那么中位数就是所有数值排序之后中间两个数的平均值。
  * 我们使用Insert()方法读取数据流，使用GetMedian()方法获取当前读取数据的中位数。
+ * 这里是用自己实现的堆解决
  * author@ pinnuli
  * date@ 2019/3/14
  */
-public class Solution {
+public class Solution1 {
     List<Integer> leftMaxHeap = new ArrayList<>();
 
     List<Integer> rightMinHeap = new ArrayList<>();
@@ -21,22 +22,32 @@ public class Solution {
     public void Insert(Integer num) {
         if ((totalCount & 1) == 0) {
             if (rightMinHeap.size() > 0 && num > rightMinHeap.get(0)) {
-                leftMaxHeap.add(rightMinHeap.get(0));
+                if (leftMaxHeap.size() > 0) {
+                    leftMaxHeap.add(leftMaxHeap.get(0));
+                    leftMaxHeap.set(0, rightMinHeap.get(0));
+                } else {
+                    leftMaxHeap.add(rightMinHeap.get(0));
+                }
                 rightMinHeap.set(0, num);
-                minHeapAdjust(rightMinHeap, 0, rightMinHeap.size() - 1);
+                minHeapAdjust(rightMinHeap);
             } else {
                 leftMaxHeap.add(num);
             }
-            maxHeapAdjust(leftMaxHeap, 0, leftMaxHeap.size() - 1);
+            maxHeapAdjust(leftMaxHeap);
         } else {
             if (leftMaxHeap.size() > 0 && num < leftMaxHeap.get(0)) {
-                rightMinHeap.add(leftMaxHeap.get(0));
+                if (rightMinHeap.size() > 0) {
+                    rightMinHeap.add(rightMinHeap.get(0));
+                    rightMinHeap.set(0, leftMaxHeap.get(0));
+                } else {
+                    rightMinHeap.add(leftMaxHeap.get(0));
+                }
                 leftMaxHeap.set(0, num);
-                maxHeapAdjust(leftMaxHeap, 0, leftMaxHeap.size() - 1);
+                maxHeapAdjust(leftMaxHeap);
             } else {
                 rightMinHeap.add(num);
             }
-            minHeapAdjust(rightMinHeap, 0, leftMaxHeap.size() - 1);
+            minHeapAdjust(rightMinHeap);
         }
 
         totalCount ++;
@@ -47,6 +58,12 @@ public class Solution {
             return (leftMaxHeap.get(0) + rightMinHeap.get(0)) / 2.0;
         }
         return (double)leftMaxHeap.get(0);
+    }
+
+    private void minHeapAdjust(List<Integer> heap) {
+        for (int i = heap.size() / 2 - 1; i >= 0; i--) {
+            minHeapAdjust(heap, i, heap.size() - 1);
+        }
     }
 
     private void minHeapAdjust(List<Integer> heap, int start, int end) {
@@ -65,6 +82,12 @@ public class Solution {
         heap.set(start, temp);
     }
 
+    private void maxHeapAdjust(List<Integer> heap) {
+        for (int i = heap.size() / 2 - 1; i >= 0; i--) {
+            maxHeapAdjust(heap, i, heap.size() - 1);
+        }
+    }
+
     private void maxHeapAdjust(List<Integer> heap, int start, int end) {
         int temp = heap.get(start);
         for (int j = 2 * start + 1; j <= end; j *= 2) {
@@ -79,14 +102,5 @@ public class Solution {
             start = j;
         }
         heap.set(start, temp);
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        int[] array = new int[]{5,2,3,4,1,6,7};
-        for (int i = 0; i < array.length; i++) {
-            solution.Insert(array[i]);
-        }
-        System.out.println(solution.GetMedian());
     }
 }
