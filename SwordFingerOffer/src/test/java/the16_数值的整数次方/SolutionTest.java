@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.After;
 
 /**
- * Solution1 Tester.
+ * Solution Tester.
  *
  * @author <Authors name>
  * @version 1.0

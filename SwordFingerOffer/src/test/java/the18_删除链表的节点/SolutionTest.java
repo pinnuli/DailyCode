@@ -8,7 +8,7 @@ import org.junit.After;
 import java.util.LinkedList;
 
 /**
- * Solution1 Tester.
+ * Solution Tester.
  *
  * @author <Authors name>
  * @version 1.0

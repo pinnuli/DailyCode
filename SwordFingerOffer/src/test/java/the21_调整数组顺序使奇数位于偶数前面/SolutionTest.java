@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.After;
 
 /**
- * Solution1 Tester.
+ * Solution Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -32,7 +32,7 @@ public class SolutionTest {
         int[] test3 = {1, 4, 2, 5, 7, 3, 6, 8};
         int[] test4 = null;
 
-        /*Solution1 solution = new Solution1();
+        /*Solution solution = new Solution();
         solution.reOrderArray2(test1);
         printArray(test1);
         solution.reOrderArray2(test2);
@@ -69,7 +69,7 @@ public class SolutionTest {
 //TODO: Test goes here... 
 /* 
 try { 
-   Method method = Solution1.getClass().getMethod("isEven", int.class);
+   Method method = Solution.getClass().getMethod("isEven", int.class);
    method.setAccessible(true); 
    method.invoke(<Object>, <Parameters>); 
 } catch(NoSuchMethodException e) { 

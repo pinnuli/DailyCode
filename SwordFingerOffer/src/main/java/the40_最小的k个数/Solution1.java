@@ -8,7 +8,7 @@ import java.util.ArrayList;
  * author@ pinnuli
  * date@ 2019/3/11
  */
-public class Solution {
+public class Solution1 {
 
     /**
      * 基于快排，时间复杂度为O(n)
@@ -16,7 +16,7 @@ public class Solution {
      * @param k
      * @return
      */
-    public ArrayList<Integer> tetLeastNumbersLikeQuickSort(int[] input, int k) {
+    public ArrayList<Integer> getLeastNumbersLikeQuickSort(int[] input, int k) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         if (k > input.length || k <= 0) {
             return result;
