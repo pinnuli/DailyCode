@@ -69,7 +69,7 @@ public class SolutionTest {
 //TODO: Test goes here... 
 /* 
 try { 
-   Method method = Solution.getClass().getMethod("isEven", int.class); 
+   Method method = Solution.getClass().getMethod("isEven", int.class);
    method.setAccessible(true); 
    method.invoke(<Object>, <Parameters>); 
 } catch(NoSuchMethodException e) { 
