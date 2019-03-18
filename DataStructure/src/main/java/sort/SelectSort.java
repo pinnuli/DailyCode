@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 public class SelectSort {
 
     public static void sort(int[] arr) {
-        if (arr.length <= 1) {
+        if (arr.length <= 1 || arr == null) {
             return;
         }
         int temp, min, flag;
@@ -31,7 +31,7 @@ public class SelectSort {
         }
     }
     public static void main(String[] args) {
-        int[] arr = {2, -1, 6, 7, -12, 2, 17, -10, -4, 8, 0, 17, 5};
+        int[] arr = null;
         sort(arr);
     }
 }
