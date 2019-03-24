@@ -6,7 +6,7 @@ import org.junit.Before;
 import org.junit.After;
 
 /**
- * Solution Tester.
+ * Solution1 Tester.
  *
  * @author <Authors name>
  * @version 1.0
@@ -40,7 +40,7 @@ public class SolutionTest {
 //TODO: Test goes here... 
 /* 
 try { 
-   Method method = Solution.getClass().getMethod("mergeSort", int[].class, int.class, int.class); 
+   Method method = Solution1.getClass().getMethod("mergeSort", int[].class, int.class, int.class);
    method.setAccessible(true); 
    method.invoke(<Object>, <Parameters>); 
 } catch(NoSuchMethodException e) { 
@@ -58,7 +58,7 @@ try {
 //TODO: Test goes here... 
 /* 
 try { 
-   Method method = Solution.getClass().getMethod("merge", int[].class, int.class, int.class, int.class); 
+   Method method = Solution1.getClass().getMethod("merge", int[].class, int.class, int.class, int.class);
    method.setAccessible(true); 
    method.invoke(<Object>, <Parameters>); 
 } catch(NoSuchMethodException e) { 
