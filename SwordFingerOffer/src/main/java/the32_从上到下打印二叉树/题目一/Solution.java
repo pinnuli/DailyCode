@@ -1,7 +1,6 @@
-package the32_从上到下打印二叉树;
+package the32_从上到下打印二叉树.题目一;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
