@@ -28,20 +28,19 @@ public class Solution {
     }
 
     private static boolean find(int target, int[][] array) {
-            int rowCount = array.length;
-            int colCount = array[0].length;
-            for (int i = rowCount - 1, j = 0; i >= 0 && j < colCount;) {
-                if (target == array[i][j]) {
-                    return true;
-                }
-                if (target > array[i][j]) {
-                    j++;
-                    continue;
-                }
-                if (target < array[i][j]) {
-                    i--;
-                }
-            }
+        if (array == null || array.length == 0 || array[0].length == 0) {
             return false;
+        }
+        int i = 0, j = array[0].length - 1;
+        while (i < array.length && j >= 0) {
+            if (target == array[i][j]) {
+                return true;
+            } else if (target > array[i][j]) {
+                i++;
+            } else {
+                j--;
+            }
+        }
+        return false;
     }
 }

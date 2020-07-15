@@ -3,6 +3,7 @@ package the9_用两个栈实现队列;
 import java.util.*;
 
 /**
+ * 用两个队列实现栈
  * @author: pinnuli
  * @date: 2019-01-31
  */

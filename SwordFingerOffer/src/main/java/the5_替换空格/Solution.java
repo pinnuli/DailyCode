@@ -54,4 +54,28 @@ public class Solution {
         }
         return str.toString();
     }
+
+    public String replaceSpace2(StringBuilder str) {
+        if (str == null) {
+            return null;
+        }
+        int indexOld = str.length() - 1;
+        for (int i = str.length() - 1; i >= 0; i--) {
+            if (str.charAt(i) == ' ') {
+                str.append("  ");
+            }
+        }
+        int indexNew = str.length() - 1;
+        while (indexOld >= 0 && indexNew > indexOld) {
+            char c = str.charAt(indexOld--);
+            if (c == ' ') {
+                str.setCharAt(indexNew--, '0');
+                str.setCharAt(indexNew--, '2');
+                str.setCharAt(indexNew--, '%');
+            } else {
+                str.setCharAt(indexNew--, c);
+            }
+        }
+        return str.toString();
+    }
 }
