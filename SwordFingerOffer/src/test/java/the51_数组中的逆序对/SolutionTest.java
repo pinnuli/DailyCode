@@ -37,7 +37,7 @@ public class SolutionTest {
      */
     @Test
     public void testMergeSort() throws Exception {
-//TODO: Test goes here... 
+//TODO: com.pinnuli.leetcode.Test goes here...
 /* 
 try { 
    Method method = Solution1.getClass().getMethod("mergeSort", int[].class, int.class, int.class);
@@ -55,7 +55,7 @@ try {
      */
     @Test
     public void testMerge() throws Exception {
-//TODO: Test goes here... 
+//TODO: com.pinnuli.leetcode.Test goes here...
 /* 
 try { 
    Method method = Solution1.getClass().getMethod("merge", int[].class, int.class, int.class, int.class);

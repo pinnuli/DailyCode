@@ -1,4 +1,4 @@
-package num3_lengthOfLongestSubstring;
+package com.pinnuli.leetcode.num03_最长子串;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -37,7 +37,7 @@ public class Solution {
             return 0;
         }
         int maxLength = 0;
-        Map<Character, Integer> map = new HashMap<>();
+        Map<Character, Integer> map = new HashMap<Character, Integer>();
         for(int i = 0,  j = 0; j < s.length(); j++) {
             if(map.containsKey(s.charAt(j))) {
                 i = Math.max(map.get(s.charAt(j)), i);

@@ -1,4 +1,4 @@
-package ConcurrentSort2;
+package sort.concurrentsort2;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;

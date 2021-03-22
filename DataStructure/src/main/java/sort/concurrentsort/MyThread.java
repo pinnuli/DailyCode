@@ -1,4 +1,4 @@
-package ConcurrentSort;
+package sort.concurrentsort;
 
 import java.util.concurrent.Callable;
 

@@ -16,7 +16,7 @@ public class TestMain {
         int N = 100000;
 
         // 测试1 一般性测试
-        System.out.println("Test for random array, size = " + N + " , random range [0, " + N + "]");
+        System.out.println("com.pinnuli.leetcode.Test for random array, size = " + N + " , random range [0, " + N + "]");
 
         Integer[] arr1 = SortTestHelper.generateRandomArray(N, 0, N);
         Integer[] arr2 = Arrays.copyOf(arr1, arr1.length);
@@ -39,7 +39,7 @@ public class TestMain {
         int swapTimes = 100;
         assert swapTimes >= 0;
 
-        System.out.println("Test for nearly ordered array, size = " + N + " , swap time = " + swapTimes);
+        System.out.println("com.pinnuli.leetcode.Test for nearly ordered array, size = " + N + " , swap time = " + swapTimes);
 
         arr1 = SortTestHelper.generateNearlyOrderedArray(N, swapTimes);
         arr2 = Arrays.copyOf(arr1, arr1.length);
@@ -59,7 +59,7 @@ public class TestMain {
 
 
         // 测试3 测试存在包含大量相同元素的数组
-        System.out.println("Test for repeatedly array, size = " + N + " , random range [0,10]");
+        System.out.println("com.pinnuli.leetcode.Test for repeatedly array, size = " + N + " , random range [0,10]");
 
         arr1 = SortTestHelper.generateRandomArray(N, 0, 10);
         arr3 = Arrays.copyOf(arr1, arr1.length);

@@ -1,5 +1,6 @@
-package num1_twoSum;
+package com.pinnuli.leetcode.num01_两数之和;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,10 +16,27 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             int anotherNum = target- nums[i];
             if (map.containsKey(anotherNum)) {
-                return new int[]{i, map.get(anotherNum)};
+                return new int[]{map.get(anotherNum), i};
             }
             map.put(nums[i], i);
         }
         throw new IllegalArgumentException("No two sum solution");
     }
+
+    public int[] twoSumByForeach(int[] nums, int target) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[i] + nums[j] == target) {
+                    return new int[]{i, j};
+                }
+            }
+        }
+        throw new IllegalArgumentException("No two sum solution");
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(Arrays.toString(solution.twoSumByForeach(new int[]{2, 6, 9, 7}, 22)));
+    }
 }
+

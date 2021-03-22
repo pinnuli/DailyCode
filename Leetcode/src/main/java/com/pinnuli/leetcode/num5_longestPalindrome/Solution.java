@@ -1,4 +1,4 @@
-package num5_longestPalindrome;
+package com.pinnuli.leetcode.num5_longestPalindrome;
 
 /**
  * @author: pinnuli

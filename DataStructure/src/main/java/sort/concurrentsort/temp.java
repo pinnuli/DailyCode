@@ -1,4 +1,4 @@
-package ConcurrentSort;
+package sort.concurrentsort;
 
 /**
  * @author: pinnuli

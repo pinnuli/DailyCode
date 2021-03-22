@@ -13,6 +13,8 @@
         <module>DataStructure</module>
         <module>Leetcode</module>
         <module>SomeInterviewCase</module>
+        <module>Concurrent</module>
+        <module>jvm</module>
     </modules>
 
 

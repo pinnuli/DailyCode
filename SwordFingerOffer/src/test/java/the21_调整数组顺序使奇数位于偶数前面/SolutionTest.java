@@ -66,7 +66,7 @@ public class SolutionTest {
      */
     @Test
     public void testIsEven() throws Exception {
-//TODO: Test goes here... 
+//TODO: com.pinnuli.leetcode.Test goes here...
 /* 
 try { 
    Method method = Solution1.getClass().getMethod("isEven", int.class);
