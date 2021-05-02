@@ -1,4 +1,4 @@
-package com.pinnuli.leetcode.num094_二叉树的中序遍历;
+package com.pinnuli.leetcode.num94_二叉树的中序遍历;
 
 import java.util.ArrayList;
 import java.util.List;
